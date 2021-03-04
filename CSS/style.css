@@ -1,0 +1,1287 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(105, 104, 104);
+}
+
+.container-menu{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: orange;*/
+}
+
+.container-text{
+    width: 700px;
+    height: 500px;
+    /*background-color: tomato;*/
+    margin-left: 25%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-list{
+    width: 1000px;
+    height: 350px;
+    /*background-color: yellowgreen;*/
+    margin-left: 500px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.container-project{
+    width: 1100px;
+    height: 500px;
+    /*background-color: blanchedalmond;*/
+    margin-left: 400px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-interest{
+    width: 1000px;
+    height: 500px;
+    /*background-color: greenyellow;*/
+    margin-left: 25%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-contact{
+    width: 1000px;
+    height: 500px;
+    /*background-color: rgb(231, 238, 129);*/
+    margin-left: 25%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.btn-menu{ /*Concerne le bouton menu*/
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.line{ /*C'est l'image du milieu qui sert à ouvrir les images autour*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.fas{ /*Cela concerne la position des images en svg*/
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bars{
+    width: auto; /*J'étais obligée de mettre ces propriétés pour centrer les images au centre*/
+    height: auto;
+}
+
+.fa-address-card{
+    background-color: rgb(108, 184, 108);
+    width: auto;
+    height: auto;
+    transition: all 0.2s 0.1s ease-in-out; /*Pour faire la transition des entrées des images*/
+}
+
+.fa-briefcase{
+    background-color: rgb(116, 116, 219);
+    width: auto;
+    height: auto;
+    transition: all 0.2s 0.2s ease-in-out;
+}
+
+.fa-graduation-cap{
+    background-color: rgb(110, 233, 212);
+    width: auto;
+    height: auto;
+    transition: all 0.2s 0.3s ease-in-out;
+}
+
+.fa-code{
+    background-color: rgb(201, 201, 117);
+    width: auto;
+    height: auto;
+    transition: all 0.2s 0.4s ease-in-out;
+}
+
+.fa-dice{
+    background-color: rgb(199, 121, 90);
+    width: auto;
+    height: auto;
+    transition: all 0.2s 0.5s ease-in-out;
+}
+
+.fa-address-book{
+    background-color: white;
+    width: auto;
+    height: auto;
+    transition: all 0.2s 0.6s ease-in-out;
+}
+
+.fa-trophy{
+    background-color: silver;
+    width: auto;
+    height: auto;
+    transition: all 0.2s 0.7s ease-in-out;
+}
+
+img{
+    height: 45%;
+    margin-left: 50px;
+}
+
+h1{
+    width: 50%;
+    margin-left: 800px;
+    font-size: 180%;
+    color: white;
+    font-family: 'Satisfy', cursive;
+}
+
+h2{
+    margin-top: 1000px; /*Pour espacer les titres entre eux*/
+    color:white;
+    font-family: 'Satisfy', cursive;
+    text-decoration: underline;
+    width: 40%;
+    height: 10%;
+}
+
+footer{
+    margin-top: 24%;
+}
+
+.title{
+    width: 50%;
+    margin-left: 750px;
+    color: white;
+    font-size: 120%;
+    font-family: 'Satisfy', cursive;
+}
+
+.box{
+    background-color: teal;
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.box-project{
+    background-color: sandybrown;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+.box-interest{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.box-contact{
+    background-color: ghostwhite;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
+
+span{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+li{
+    line-height: 3em;
+}
+/*Ceux qui ont le hastage Skill concernent les compétences*/
+#SkillBox {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 95%;
+    height: auto;
+    margin: 40px auto;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;  
+}
+
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+#Skill-HTML {
+    width: 100%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: #ea8564;
+}
+
+#Skill-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: #55a69f;
+}
+
+#Skill-jQuery {
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    background-color: #99856d;
+}
+
+#Skill-JS {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    background-color: #c44e45;
+}
+
+#Skill-Bootstrap {
+    animation: Animate-Bootstrap 4s;
+    -webkit-animation: Animate-Bootstrap 4s;
+    -moz-animation: Animate-Bootstrap 4s;
+    -o-animation: Animate-Bootstrap 4s;
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    background-color: #5aa669;
+}
+
+#Skill-SASS {
+    animation: Animate-SASS 4s;
+    -webkit-animation: Animate-SASS 4s;
+    -moz-animation: Animate-SASS 4s;
+    -o-animation: Animate-SASS 4s;
+    width: 45%;
+    height: 50px;
+    position: absolute;
+    background-color: #970cc1;
+}
+
+#Skill-Symfony {
+    animation: Animate-Symfony 4s;
+    -webkit-animation: Animate-Symfony 4s;
+    -moz-animation: Animate-Symfony 4s;
+    -o-animation: Animate-Symfony 4s;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    background-color: #8e930c;
+}
+
+#Skill-PHP {
+    animation: Animate-PHP 4s;
+    -webkit-animation: Animate-PHP 4s;
+    -moz-animation: Animate-PHP 4s;
+    -o-animation: Animate-PHP 4s;
+    width: 35%;
+    height: 50px;
+    position: absolute;
+    background-color: #5A69A6;
+}
+
+#Skill-SQL {
+    animation: Animate-SQL 4s;
+    -webkit-animation: Animate-SQL 4s;
+    -moz-animation: Animate-SQL 4s;
+    -o-animation: Animate-SQL 4s;
+    width: 30%;
+    height: 50px;
+    position: absolute;
+    background-color: #23b1db;
+}
+
+#Skill-NodeJS {
+    animation: Animate-NodeJS 4s;
+    -webkit-animation: Animate-NodeJS 4s;
+    -moz-animation: Animate-NodeJS 4s;
+    -o-animation: Animate-NodeJS 4s;
+    width: 45%;
+    height: 50px;
+    position: absolute;
+    background-color: #f8a51e;
+}
+
+#Skill-VueJS{
+    animation: Animate-VueJS 4s;
+    -webkit-animation: Animate-VueJS 4s;
+    -moz-animation: Animate-VueJS 4s;
+    -o-animation: Animate-VueJS 4s;
+    width: 45%;
+    height: 50px;
+    position: absolute;
+    background-color: #2ce94c;
+}
+
+#Skill-PHPMyAdmin{
+    animation: Animate-PHPMyAdmin 4s;
+    -webkit-animation: Animate-PHPMyAdmin 4s;
+    -moz-animation: Animate-PHPMyAdmin 4s;
+    -o-animation: Animate-PHPMyAdmin 4s;
+    width: 65%;
+    height: 50px;
+    position: absolute;
+    background-color: #c05c2d;
+}
+
+#Skill-MongoDB{
+    animation: Animate-MongoDB 4s;
+    -webkit-animation: Animate-MongoDB 4s;
+    -moz-animation: Animate-MongoDB 4s;
+    -o-animation: Animate-MongoDB 4s;
+    width: 35%;
+    height: 50px;
+    position: absolute;
+    background-color: #c64deb;
+}
+
+#Skill-Wordpress{
+    animation: Animate-Wordpress 4s;
+    -webkit-animation: Animate-Wordpress 4s;
+    -moz-animation: Animate-Wordpress 4s;
+    -o-animation: Animate-Wordpress 4s;
+    width: 55%;
+    height: 50px;
+    position: absolute;
+    background-color: #505504;
+}
+
+#SkillPrestashop{
+    animation: Animate-Prestashop 4s;
+    -webkit-animation: Animate-Prestashop 4s;
+    -moz-animation: Animate-Prestashop 4s;
+    -o-animation: Animate-Prestashop 4s;
+    width: 55%;
+    height: 50px;
+    position: absolute;
+    background-color: #075ee9;
+}
+
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-family: Lato-Regular, sans-serif;
+    font-size: 18px;
+}
+
+/*Partie Animation*/
+
+.container-menu.active .fa-address-card{
+    left: 100%;
+}
+
+.container-menu.active .fa-graduation-cap{
+    top: 85%;
+    left: 85%;
+}
+
+.container-menu.active .fa-address-book{
+    left: 0%;
+    top: 50%;
+}
+
+.container-menu.active .fa-briefcase{
+    top: 100%;
+}
+
+.container-menu.active .fa-code{
+    left: 50%;
+    top: 0%;
+}
+
+.container-menu.active .fa-dice{
+    left: 15%;
+    top: 10%;
+}
+
+.container-menu.active .fa-trophy{
+    top: 85%;
+    left: 0%;
+}
+
+.box-project:hover{
+    width: 600px;
+}
+/*Les keyframe concernent la partie expérience, elles ont pour but d'animer la barre de pourcentage de leur composant*/
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-o-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}
+
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-o-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}
+
+@keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-webkit-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-moz-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-o-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}
+
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-o-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}
+
+@keyframes Animate-Bootstrap {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-webkit-keyframes Animate-Bootstrap {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-moz-keyframes Animate-Bootstrap {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-o-keyframes Animate-Bootstrap {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}
+
+@keyframes Animate-SASS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-webkit-keyframes Animate-SASS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-moz-keyframes Animate-SASS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-o-keyframes Animate-SASS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}
+
+@keyframes Animate-Symfony {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-Symfony {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-Symfony {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-o-keyframes Animate-Symfony {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}
+
+@keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 35%}
+}@-webkit-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 35%}
+}@-moz-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 35%}
+}@-o-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 35%}
+}
+
+@keyframes Animate-SQL {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-webkit-keyframes Animate-SQL {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-moz-keyframes Animate-SQL {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}@-o-keyframes Animate-SQL {
+    from {
+    width: 10px;
+}
+to {
+    width: 30%}
+}
+
+@keyframes Animate-NodeJS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-webkit-keyframes Animate-NodeJS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-moz-keyframes Animate-NodeJS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-o-keyframes Animate-NodeJS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}
+
+@keyframes Animate-VueJS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-webkit-keyframes Animate-VueJS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-moz-keyframes Animate-VueJS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}@-o-keyframes Animate-VueJS {
+    from {
+    width: 10px;
+}
+to {
+    width: 45%}
+}
+
+@keyframes Animate-PHPMyAdmin {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-webkit-keyframes Animate-PHPMyAdmin {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-moz-keyframes Animate-PHPMyAdmin {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}@-o-keyframes Animate-PHPMyAdmin {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}
+
+@keyframes Animate-MongoDB {
+    from {
+    width: 10px;
+}
+to {
+    width: 35%}
+}@-webkit-keyframes Animate-MongoDB {
+    from {
+    width: 10px;
+}
+to {
+    width: 35%}
+}@-moz-keyframes Animate-MongoDB {
+    from {
+    width: 10px;
+}
+to {
+    width: 35%}
+}@-o-keyframes Animate-MongoDB {
+    from {
+    width: 10px;
+}
+to {
+    width: 35%}
+}
+
+@keyframes Animate-Wordpress {
+    from {
+    width: 10px;
+}
+to {
+    width: 55%}
+}@-webkit-keyframes Animate-Wordpress {
+    from {
+    width: 10px;
+}
+to {
+    width: 55%}
+}@-moz-keyframes Animate-Wordpress {
+    from {
+    width: 10px;
+}
+to {
+    width: 55%}
+}@-o-keyframes Animate-Wordpress {
+    from {
+    width: 10px;
+}
+to {
+    width: 55%}
+}
+
+@keyframes Animate-Prestashop {
+    from {
+    width: 10px;
+}
+to {
+    width: 55%}
+}@-webkit-keyframes Animate-Prestashop {
+    from {
+    width: 10px;
+}
+to {
+    width: 55%}
+}@-moz-keyframes Animate-Prestashop {
+    from {
+    width: 10px;
+}
+to {
+    width: 55%}
+}@-o-keyframes Animate-Prestashop {
+    from {
+    width: 10px;
+}
+to {
+    width: 55%}
+}
+
+/*Partie Responsive Design*/
+/*Partie mobile*/
+@media screen and (max-width: 720px){
+    h1{
+        margin-left: 100px;
+    }
+
+    .title{
+        margin-left: 100px;
+    }
+    
+    .container-menu{
+        width:200px;
+        height: 150px;
+    }
+    
+    .container-text{
+        margin-left: 100px;
+        width: 200px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container-list{
+        width: 355px;
+        height: 1100px;
+        margin-left: 20px;
+    }
+
+    .container-project{
+        margin-left: 20px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .container-interest{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 200px;
+    }
+
+    .container-contact{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 70px;
+        width: 200px;
+    }
+
+    .box-project{
+        height: 200px;
+        width: 200px;
+    }
+
+    .box-contact{
+        width: 200px;
+    }
+
+    h2{
+        margin-left: 150px;
+    }
+
+    #Skill-jQuery{
+        width: 100%;
+    }
+
+    #Skill-JS{
+        width: 100%;
+    }
+
+    #Skill-Bootstrap{
+        width: 100%;
+    }
+
+    #Skill-SASS{
+        width: 100%;
+    }
+
+    #Skill-Symfony{
+        width: 100%;
+    }
+
+    #Skill-PHP{
+        width: 100%;
+    }
+
+    #Skill-SQL{
+        width: 100%;
+    }
+
+    #Skill-PHPMyAdmin{
+        width: 100%;
+    }
+
+    #Skill-MongoDB{
+        width: 100%;
+    }
+
+    #Skill-Wordpress{
+        width: 100%;
+    }
+
+    #SkillPrestashop{
+        width: 100%;
+    }
+    /*Animation en responsive design des barres de compétence*/
+    @keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-SASS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-SASS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-SASS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-SASS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-JS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-JS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-JS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-JS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-Bootstrap {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-Bootstrap {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-Bootstrap {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-Bootstrap {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-Symfony {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-Symfony {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-Symfony {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-Symfony {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-jQuery {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-PHP {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-PHP {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-PHP {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-PHPMyAdmin {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-PHPMyAdmin {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-PHPMyAdmin {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-PHPMyAdmin {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-MongoDB {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-MongoDB {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-MongoDB {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-MongoDB {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-Wordpress {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-Wordpress {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-Wordpress {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-Wordpress {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-Prestashop {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-Prestashop {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-Prestashop {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-Prestashop {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+}
