@@ -8,6 +8,50 @@ body{
     background-color: rgb(105, 104, 104);
 }
 
+img{
+    height: 45%;
+    margin-left: 50px;
+}
+
+h1{
+    width: 50%;
+    margin-left: 800px;
+    font-size: 180%;
+    color: white;
+    font-family: 'Satisfy', cursive;
+}
+
+h2{
+    margin-top: 1000px; /*Pour espacer les titres entre eux*/
+    color:white;
+    font-family: 'Satisfy', cursive;
+    text-decoration: underline;
+    width: 40%;
+    height: 10%;
+}
+
+h3{
+    font-family: 'satisfy', cursive;
+    color: white;
+    text-decoration: underline;
+    width: 40%;
+    height: 10%;
+    margin-top: 200px;
+}
+
+span{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+li{
+    line-height: 3em;
+}
+
+footer{
+    margin-top: 24%;
+}
+
 .container-menu{
     width: 300px;
     height: 300px;
@@ -71,6 +115,18 @@ body{
     width: 1000px;
     height: 500px;
     /*background-color: rgb(231, 238, 129);*/
+    margin-left: 25%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.container-network{
+    width: 1000px;
+    height: 500px;
+    /*background-color: chocolate;*/
     margin-left: 25%;
     margin-top: 5%;
     display: flex;
@@ -167,33 +223,7 @@ body{
     height: auto;
     transition: all 0.2s 0.7s ease-in-out;
 }
-
-img{
-    height: 45%;
-    margin-left: 50px;
-}
-
-h1{
-    width: 50%;
-    margin-left: 800px;
-    font-size: 180%;
-    color: white;
-    font-family: 'Satisfy', cursive;
-}
-
-h2{
-    margin-top: 1000px; /*Pour espacer les titres entre eux*/
-    color:white;
-    font-family: 'Satisfy', cursive;
-    text-decoration: underline;
-    width: 40%;
-    height: 10%;
-}
-
-footer{
-    margin-top: 24%;
-}
-
+/*A partir d'ici, nous quittons le menu pour entrer dans les pages*/
 .title{
     width: 50%;
     margin-left: 750px;
@@ -243,13 +273,14 @@ footer{
     padding-top: 5%;
 }
 
-span{
-    text-decoration: underline;
-    font-weight: 700;
-}
-
-li{
-    line-height: 3em;
+.box-network{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
 }
 /*Ceux qui ont le hastage Skill concernent les compétences*/
 #SkillBox {
