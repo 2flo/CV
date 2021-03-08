@@ -14,8 +14,8 @@ img{
 }
 
 h1{
-    width: 50%;
-    margin-left: 800px;
+    width: 60%;
+    margin-left: 42%;
     font-size: 180%;
     color: white;
     font-family: 'Satisfy', cursive;
@@ -225,8 +225,8 @@ footer{
 }
 /*A partir d'ici, nous quittons le menu pour entrer dans les pages*/
 .title{
-    width: 50%;
-    margin-left: 750px;
+    width: 60%;
+    margin-left: 43%;
     color: white;
     font-size: 120%;
     font-family: 'Satisfy', cursive;
@@ -925,23 +925,15 @@ to {
 
 /*Partie Responsive Design*/
 /*Partie mobile*/
-@media screen and (max-width: 720px){
-    h1{
-        margin-left: 100px;
-    }
-
-    
+@media screen and (max-width: 600px){
     h2{
-        margin-left: 150px;
+        margin-left: 30%;
     }
 
     h3{
         margin-left: 150px;
     }
-    
-    .title{
-        margin-left: 100px;
-    }
+
     .container-menu{
         width:200px;
         height: 150px;
@@ -1333,16 +1325,8 @@ to {
 }
 
 @media screen and (max-width: 1024px){
-    h1{
-        margin-left: 350px;
-    }
-
     h2{
         margin-left: 405px
-    }
-
-    .title{
-        margin-left: 350px;
     }
 
     .container-text{

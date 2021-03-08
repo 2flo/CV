@@ -6,5 +6,5 @@ const faBars = document.getElementsByClassName('.fa-bars');
 
 btnMenu.addEventListener('click', () => {
     containerMenu.classList.toggle('active');
-    faBars.src = '<i class="fas fa-times"></i>';
+    faBars.src = 'IMG/cross.svg';
 })
