@@ -15,7 +15,7 @@ img{
 
 h1{
     width: 60%;
-    margin-left: 42%;
+    margin-left: 800px;
     font-size: 180%;
     color: white;
     font-family: 'Satisfy', cursive;
@@ -66,7 +66,7 @@ footer{
     width: 700px;
     height: 500px;
     /*background-color: tomato;*/
-    margin-left: 25%;
+    margin-left: 500px;
     margin-top: 5%;
     display: flex;
     flex-direction: row;
@@ -226,7 +226,7 @@ footer{
 /*A partir d'ici, nous quittons le menu pour entrer dans les pages*/
 .title{
     width: 60%;
-    margin-left: 43%;
+    margin-left: 700px;
     color: white;
     font-size: 120%;
     font-family: 'Satisfy', cursive;
@@ -926,6 +926,14 @@ to {
 /*Partie Responsive Design*/
 /*Partie mobile*/
 @media screen and (max-width: 600px){
+    h1{
+        margin-left: 100px;
+    }
+
+    .title{
+        margin-left: 100px;
+    }
+    
     h2{
         margin-left: 30%;
     }
@@ -940,16 +948,16 @@ to {
     }
     
     .container-text{
-        margin-left: 100px;
+        margin-left: 50px;
         width: 200px;
         display:flex;
         flex-direction: column;
     }
 
     .container-list{
-        width: 355px;
+        width: 250px;
         height: 1100px;
-        margin-left: 20px;
+        margin-left: 25px;
     }
 
     .container-project{
@@ -1022,6 +1030,18 @@ to {
     }
 
     #Skill-PHPMyAdmin{
+        width: 100%;
+    }
+
+    .Skill-Area{
+        margin-left: -40px; /*Cette propriété est bizarre? Elle est nécéssaire pour la visibilité des langages dans les compétences*/
+    }
+
+    #Skill-NodeJS{
+        width: 100%;
+    }
+
+    #Skill-VueJS{
         width: 100%;
     }
 
@@ -1167,7 +1187,7 @@ to {
         width: 100%}
     }
 
-    @keyframes Animate-jQuery {
+    @keyframes Animate-PHP {
         from {
         width: 10px;
     }
@@ -1212,6 +1232,58 @@ to {
     to {
         width: 100%}
     }@-o-keyframes Animate-SQL {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-NodeJS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-NodeJS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-NodeJS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-NodeJS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }
+
+    @keyframes Animate-VueJS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-webkit-keyframes Animate-VueJS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-moz-keyframes Animate-VueJS {
+        from {
+        width: 10px;
+    }
+    to {
+        width: 100%}
+    }@-o-keyframes Animate-VueJS {
         from {
         width: 10px;
     }
@@ -1321,38 +1393,5 @@ to {
     }
     to {
         width: 100%}
-    }
-}
-
-@media screen and (max-width: 1024px){
-    h2{
-        margin-left: 405px
-    }
-
-    .container-text{
-        margin-left: 100px;
-        width: 700px;
-    }
-
-    .container-list{
-        margin-left: 350px;
-        width: 500px;
-    }
-
-    .container-project{
-        margin-left: 24px;
-        width: 300px;
-    }
-
-    .container-interest{
-        margin-left: auto;
-    }
-
-    .container-contact{
-        margin-left: auto;
-    }
-
-    .container-network{
-        margin-left: auto;
     }
 }
