@@ -231,7 +231,7 @@ footer{
     background-color: goldenrod;
     width: auto;
     height: auto;
-    transition: all 0.2s 0.7s ease-in-out;
+    transition: all 0.2s 0.8s ease-in-out;
 }
 /*A partir d'ici, nous quittons le menu pour entrer dans les pages*/
 .title{
