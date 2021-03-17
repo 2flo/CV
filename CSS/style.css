@@ -79,13 +79,13 @@ footer{
 }
 
 .container-project{
-    width: 1100px;
+    width: 1110px;
     height: 500px;
     /*background-color: blanchedalmond;*/
     margin-left: 300px;
     margin-top: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -254,12 +254,7 @@ footer{
 
 .box-project{
     background-color: white;
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5%;
+    width: 30%;
 }
 
 .box-interest{
@@ -548,7 +543,7 @@ footer{
 }
 
 .box-project:hover{
-    width: 600px;
+    width: 400px;
 }
 /*Les keyframe concernent la partie expérience, elles ont pour but d'animer la barre de pourcentage de leur composant*/
 @keyframes Animate-HTML {
