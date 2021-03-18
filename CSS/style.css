@@ -294,7 +294,7 @@ footer{
 #SkillBox {
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 40px auto;
     background-color: #fff;
@@ -954,6 +954,7 @@ to {
     
     h2{
         margin-left: 30%;
+        margin-top: 500px;
     }
 
     footer{
