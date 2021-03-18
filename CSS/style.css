@@ -946,6 +946,11 @@ to {
     .title{
         margin-left: 100px;
     }
+
+    .circle{
+        margin-left: -30px;
+        margin-bottom: 10px;
+    }
     
     h2{
         margin-left: 30%;
@@ -960,12 +965,10 @@ to {
         height: 150px;
     }
     
-    .container-text{
-        margin-left: 50px;
+    .container{
+        margin-left: 20px;
+        margin-bottom: -40px;
         width: 200px;
-        display:flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
     }
 
     .container-list{
